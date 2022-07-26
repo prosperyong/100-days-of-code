@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -6,7 +6,7 @@
 body {
   align-items: center;
   background-color: rgb(184, 161, 234);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -31,4 +31,22 @@ body .container .joke {
   line-height: 40px;
   margin: 50px auto;
   max-width: 60px;
+}
+body .container .btn {
+  background-color: #9f68e0;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 40px;
+}
+body .container .btn:focus {
+  outline: 0;
+}
+body .container .btn:hover {
+  cursor: pointer;
+}
+body .container .btn:active {
+  transform: scale(0.98);
 }/*# sourceMappingURL=main.css.map */
