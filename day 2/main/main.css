@@ -1,12 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 * {
   box-sizing: border-box;
 }
 
 body {
   align-items: center;
-  background-color: rgb(184, 161, 234);
-  font-family: "Roboto", sans-serif;
+  background: #5C258D;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4389A2, #5C258D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Source Sans Pro", sans-serif;
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -30,7 +34,7 @@ body .container .joke {
   font-size: 40px;
   line-height: 40px;
   margin: 50px auto;
-  max-width: 60px;
+  max-width: 600px;
 }
 body .container .btn {
   background-color: #9f68e0;

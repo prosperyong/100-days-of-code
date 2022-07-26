@@ -1,7 +1,7 @@
 let jokeContainer = document.getElementById('joke');
 let getJokeBtn = document.getElementById('getJokeBtn');
 
-getJokeBtn.addEventListener('click', async() => {
+async function jokeFunction() {
     let url = await fetch("https://excuser.herokuapp.com/v1/excuse/office/", {
         headers: {
             'Accept': 'application/json'
@@ -9,7 +9,9 @@ getJokeBtn.addEventListener('click', async() => {
     });
 
     const joke = await url.json();
-    console.log(joke.excuse);
+    console.log(joke);
 
-    jokeContainer.innerHTML = joke['id'];
-});
+    jokeContainer.innerHTML = joke[0].excuse;
+}
+jokeFunction();
+getJokeBtn.addEventListener('click', jokeFunction);
